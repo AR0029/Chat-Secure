@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/detailsTextView"
+        style="@style/BottomSheetActionItem"
+        android:contentDescription="@string/AccessibilityId_contactUserDetails"
+        android:text="@string/contactUserDetails"
+        app:drawableStartCompat="@drawable/ic_info"
+        app:drawableTint="?attr/colorControlNormal" />
+
+    <TextView
+        android:id="@+id/copyConversationId"
+        style="@style/BottomSheetActionItem"
+        android:visibility="visible"
+        android:text="@string/accountIDCopy"
+        app:drawableStartCompat="@drawable/ic_copy"
+        app:drawableTint="?attr/colorControlNormal" />
+
+    <TextView
+        android:id="@+id/copyCommunityUrl"
+        style="@style/BottomSheetActionItem"
+        android:visibility="gone"
+        android:text="@string/communityUrlCopy"
+        app:drawableStartCompat="@drawable/ic_copy"
+        app:drawableTint="?attr/colorControlNormal" />
+
+    <TextView
+        android:id="@+id/pinTextView"
+        style="@style/BottomSheetActionItem"
+        android:contentDescription="@string/AccessibilityId_pin"
+        android:text="@string/pin"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_pin"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/unpinTextView"
+        style="@style/BottomSheetActionItem"
+        android:text="@string/pinUnpin"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_pin_off"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/blockTextView"
+        style="@style/BottomSheetActionItem"
+        android:contentDescription="@string/AccessibilityId_block"
+        android:text="@string/block"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_ban"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/unblockTextView"
+        style="@style/BottomSheetActionItem"
+        android:text="@string/blockUnblock"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_check"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/muteNotificationsTextView"
+        style="@style/BottomSheetActionItem"
+        android:contentDescription="@string/AccessibilityId_notificationsMute"
+        android:text="@string/notificationsMute"
+        app:drawableStartCompat="@drawable/ic_volume_off"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/unMuteNotificationsTextView"
+        style="@style/BottomSheetActionItem"
+        android:text="@string/notificationsMuteUnmute"
+        app:drawableStartCompat="@drawable/ic_volume_2"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:visibility="visible"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/notificationsTextView"
+        style="@style/BottomSheetActionItem"
+        android:text="@string/sessionNotifications"
+        app:drawableTint="?attr/colorControlNormal"
+        app:drawableStartCompat="@drawable/ic_outline_notification_important_24"
+        tools:visibility="visible"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/markAllAsReadTextView"
+        style="@style/BottomSheetActionItem"
+        android:text="@string/messageMarkRead"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:drawableTint="?attr/colorControlNormal"
+        app:drawableStartCompat="@drawable/ic_mail_open" />
+
+    <TextView
+        android:id="@+id/deleteTextView"
+        style="@style/BottomSheetActionItem"
+        android:contentDescription="@string/AccessibilityId_delete"
+        android:text="@string/delete"
+        app:drawableTint="?attr/colorControlNormal"
+        tools:drawableStartCompat="@drawable/ic_trash_2" />
+
+</LinearLayout>
